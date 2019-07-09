@@ -1,0 +1,83 @@
+Hello, and welcome to your new Fortnite Scrims bot! 
+Thank you for purchasing this bot, if you have any questions at all, please make sure
+to contact me on discord, at PickleZ#0001
+
+In this file, you will see a in-depth features list, admin, setup, and user commands, as well as
+how to make this bot custom to your server. While most features can be changed in discord, some hard-coded
+features, such as your bot token, can not be done in discord. Once again feel free to contact me if you
+need any help whatsoever.
+
+MAIN FEATURES:
+- Create-A-Team, this features allows people to make a channel, and voice channel with their team, as well as invite/allow
+other players to join their team. All teams are closed after a certain amount of time defined in config.
+
+- Multiple Scrims at once, since we use a temporary scrim creation function, you can have as many scrims as you want! 
+
+- Multiple roles for admining and starting scrims
+
+- Automatic reroll if config'd 'REQ' exeeds maximum
+
+- Dynamic Countdown, corrected to each player's latency
+
+- Simple, yet effective command GUIs so you know what to do, no matter what needs to be done
+
+- 100% Customizable Code, and easy-to-use Config
+
+
+COMMANDS - USERS:
+!help - Opens help GUI, if it gets too long I will add more pages so !help [Page]
+
+!time - Returns the time left until the next queue will start
+
+!team create [name] [open/closed] - Creates a new team, and if the team is open, posts a looking for team ad in designated channel
+
+!team help - Opens the team help GUI
+
+!team delete - Deletes your team if you have the correct permissions.
+
+!team invite [User] - Invites a user to your team (Only if they are in the discord)
+
+!team kick [User] - Kicks a user to your team (only if you have correct permissions)
+
+!team bump - Bumps the message in channel advertisement, can only occur once every 24 hours.
+
+!team renew - Renews the time limit on a team (default removal of channels and such is 1.5h)
+
+!ticket [problem] - Creates a help ticket with the admins. 
+
+
+
+COMMANDS - ADMINS:
+!admin help - Displays admin commands in a nice GUI
+
+!admin close - Closes a channel (Typically used for tickets)
+
+!admin team delete [name] - Deletes a team with given [name]
+
+!admin mark [WAITING/PENDING/CLOSED] - Marks a ticket as waiting, pending, or closed
+
+!admin blacklist [User] - Blacklists a user from joining any queues
+
+!admin announce [Announcement] - Announces a message from the bot in the designated channel
+
+!admin update [Update] - Sends out an update from the bot in the designated channel
+
+!admin prefix [newPrefix] - Sets the new prefix to be a new symbol !ONLY TEMPORARY!
+
+!admin status [Status] - Sets the new bot status/playing message to 'Status'
+
+
+
+COMMANDS - QUEUES:
+!queue start [name] [SOLO/DUO/SQUADS/OTHER] - Starts a new queue, begins countdown, once done, channel is opened
+
+!queue end [name] [reason] - Ends a queue for [reason]
+
+!requeue [name] [reason] - Ends the [name] queue, and starts a new queue, with the same name
+
+!host set [name] - Sets the footer message of queue's to [name] default is bots name
+
+!countdown set [time] - Sets the countdown duration to be [time]
+
+!input set [time] - Sets the input duration (3 digit codes) to be [time]
+
